@@ -1,4 +1,4 @@
-mathematica-notebooks
+Mathematica Notebooks
 =====================
 
 A collection of my Wolfram Mathematica notebooks.
@@ -8,11 +8,11 @@ Development Status
 
 ### Reuse-ability
 
-These notebooks are mainly exploration of features and possibilities provided by Wolfram Mathematica. They are good demonstration and example, but not reuse-able software or packages.
+These notebooks are mainly exploration of features and possibilities provided by Wolfram Mathematica. They are good demonstration and examples, but not reuse-able software or packages.
 
 ### Compatibility
 
-All notebooks included in this repository can run in Wolfram Mathematica 8 or above, even the ones from far early days, because before putting them here, I've reprocessed every single statements to make them runnable.
+All notebooks included in this repository can run in Wolfram Mathematica 8 or above, even the ones from far early days. Before putting them here, I've reprocessed every single statements to make them runnable in Wolfram Mathematica 8.
 
 ### Naming
 
