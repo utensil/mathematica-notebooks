@@ -1,0 +1,959 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     42582,        950]
+NotebookOptionsPosition[     41770,        918]
+NotebookOutlinePosition[     42115,        933]
+CellTagsIndexPosition[     42072,        930]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", 
+  RowBox[{"t", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<data/ASYDATA.DAT\>\"", ",", "\"\<Table\>\"", ",", 
+     RowBox[{"Path", " ", "\[Rule]", " ", 
+      RowBox[{"NotebookDirectory", "[", "]"}]}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.617190727096966*^9, 3.6171907693513823`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\<\"H\"\>", "0.79`"},
+      {"\<\"He\"\>", "0.49`"},
+      {"\<\"Li\"\>", "2.05`"},
+      {"\<\"Be\"\>", "1.4`"},
+      {"\<\"B\"\>", "1.17`"},
+      {"\<\"C\"\>", "0.91`"},
+      {"\<\"N\"\>", "0.75`"},
+      {"\<\"O\"\>", "0.65`"},
+      {"\<\"F\"\>", "0.57`"},
+      {"\<\"Ne\"\>", "0.51`"},
+      {"\<\"Na\"\>", "2.23`"},
+      {"\<\"Mg\"\>", "1.72`"},
+      {"\<\"Al\"\>", "1.82`"},
+      {"\<\"Si\"\>", "1.46`"},
+      {"\<\"P\"\>", "1.23`"},
+      {"\<\"S\"\>", "1.09`"},
+      {"\<\"Cl\"\>", "0.97`"},
+      {"\<\"Ar\"\>", "0.88`"},
+      {"\<\"K\"\>", "2.77`"},
+      {"\<\"Ca\"\>", "2.23`"},
+      {"\<\"Sc\"\>", "2.09`"},
+      {"\<\"Ti\"\>", "2"},
+      {"\<\"V\"\>", "1.92`"},
+      {"\<\"Cr\"\>", "1.85`"},
+      {"\<\"Mn\"\>", "1.79`"},
+      {"\<\"Fe\"\>", "1.72`"},
+      {"\<\"Co\"\>", "1.67`"},
+      {"\<\"Ni\"\>", "1.62`"},
+      {"\<\"Cu\"\>", "1.57`"},
+      {"\<\"Zn\"\>", "1.53`"},
+      {"\<\"Ga\"\>", "1.81`"},
+      {"\<\"As\"\>", "1.33`"},
+      {"\<\"Se\"\>", "1.22`"},
+      {"\<\"Br\"\>", "1.12`"},
+      {"\<\"Kr\"\>", "1.03`"},
+      {"\<\"Rb\"\>", "2.98`"},
+      {"\<\"Sr\"\>", "2.45`"},
+      {"\<\"Y\"\>", "2.27`"},
+      {"\<\"Zr\"\>", "2.16`"},
+      {"\<\"Nb\"\>", "2.08`"},
+      {"\<\"Mo\"\>", "2.01`"},
+      {"\<\"Tc#\"\>", "1.95`"},
+      {"\<\"Rn\"\>", "1.89`"},
+      {"\<\"Rh\"\>", "1.83`"},
+      {"\<\"Pd\"\>", "1.79`"},
+      {"\<\"Ag\"\>", "1.75`"},
+      {"\<\"Cd\"\>", "1.71`"},
+      {"\<\"In\"\>", "2"},
+      {"\<\"Sn\"\>", "1.72`"},
+      {"\<\"Sb\"\>", "1.53`"},
+      {"\<\"Te\"\>", "1.42`"},
+      {"\<\"I\"\>", "1.32`"},
+      {"\<\"Xe\"\>", "1.24`"},
+      {"\<\"Cs\"\>", "3.34`"},
+      {"\<\"Ba\"\>", "2.78`"},
+      {"\<\"La\"\>", "2.74`"},
+      {"\<\"Ce\"\>", "2.7`"},
+      {"\<\"Dr\"\>", "2.67`"},
+      {"\<\"Nd\"\>", "2.64`"},
+      {"\<\"Pm\"\>", "2.62`"},
+      {"\<\"Sm\"\>", "2.59`"},
+      {"\<\"Eu\"\>", "2.56`"},
+      {"\<\"Gd\"\>", "2.54`"},
+      {"\<\"Tb\"\>", "2.51`"},
+      {"\<\"Dy\"\>", "2.49`"},
+      {"\<\"Ho\"\>", "2.47`"},
+      {"\<\"Er\"\>", "2.45`"},
+      {"\<\"Tm\"\>", "2.42`"},
+      {"\<\"Yb\"\>", "2.4`"},
+      {"\<\"Lu\"\>", "2.25`"},
+      {"\<\"Hf\"\>", "2.16`"},
+      {"\<\"Ta\"\>", "2.09`"},
+      {"\<\"W\"\>", "2.02`"},
+      {"\<\"Re\"\>", "1.97`"},
+      {"\<\"Os\"\>", "1.92`"},
+      {"\<\"Ir\"\>", "1.87`"},
+      {"\<\"Dt\"\>", "1.83`"},
+      {"\<\"Au\"\>", "1.79`"},
+      {"\<\"Hg\"\>", "1.76`"},
+      {"\<\"Tl\"\>", "2.08`"},
+      {"\<\"Pb\"\>", "1.81`"},
+      {"\<\"Bi\"\>", "1.63`"},
+      {"\<\"Po\"\>", "1.53`"},
+      {"\<\"At#\"\>", "1.43`"},
+      {"\<\"Rn\"\>", "1.34`"}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+        "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.7]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+   Function[BoxForm`e$, 
+    MatrixForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.617190760145856*^9, 3.617190792781722*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"s", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{"t", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+   "0.79`", ",", "0.49`", ",", "2.05`", ",", "1.4`", ",", "1.17`", ",", 
+    "0.91`", ",", "0.75`", ",", "0.65`", ",", "0.57`", ",", "0.51`", ",", 
+    "2.23`", ",", "1.72`", ",", "1.82`", ",", "1.46`", ",", "1.23`", ",", 
+    "1.09`", ",", "0.97`", ",", "0.88`", ",", "2.77`", ",", "2.23`", ",", 
+    "2.09`", ",", "2", ",", "1.92`", ",", "1.85`", ",", "1.79`", ",", "1.72`",
+     ",", "1.67`", ",", "1.62`", ",", "1.57`", ",", "1.53`", ",", "1.81`", 
+    ",", "1.33`", ",", "1.22`", ",", "1.12`", ",", "1.03`", ",", "2.98`", ",",
+     "2.45`", ",", "2.27`", ",", "2.16`", ",", "2.08`", ",", "2.01`", ",", 
+    "1.95`", ",", "1.89`", ",", "1.83`", ",", "1.79`", ",", "1.75`", ",", 
+    "1.71`", ",", "2", ",", "1.72`", ",", "1.53`", ",", "1.42`", ",", "1.32`",
+     ",", "1.24`", ",", "3.34`", ",", "2.78`", ",", "2.74`", ",", "2.7`", ",",
+     "2.67`", ",", "2.64`", ",", "2.62`", ",", "2.59`", ",", "2.56`", ",", 
+    "2.54`", ",", "2.51`", ",", "2.49`", ",", "2.47`", ",", "2.45`", ",", 
+    "2.42`", ",", "2.4`", ",", "2.25`", ",", "2.16`", ",", "2.09`", ",", 
+    "2.02`", ",", "1.97`", ",", "1.92`", ",", "1.87`", ",", "1.83`", ",", 
+    "1.79`", ",", "1.76`", ",", "2.08`", ",", "1.81`", ",", "1.63`", ",", 
+    "1.53`", ",", "1.43`", ",", "1.34`"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.617190796109913*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BarChart", "[", 
+  RowBox[{"s", ",", 
+   RowBox[{"BarStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"RGBColor", "[", 
+      RowBox[{"0", ",", "1", ",", "0"}], "]"}], "}"}]}], ",", 
+   RowBox[{"BarLabels", "\[Rule]", 
+    RowBox[{"Table", "[", 
+     RowBox[{"t", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}]}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[{{
+     {RGBColor[0, 1, 0], RectangleBox[{0.6, 0}, {1.4, 0.79}]}, 
+     {GrayLevel[0], 
+      LineBox[{{0.6, 0}, {0.6, 0.79}, {1.4, 0.79}, {1.4, 0}, {0.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{1.6, 0}, {2.4, 0.49}]}, 
+     {GrayLevel[0], 
+      LineBox[{{1.6, 0}, {1.6, 0.49}, {2.4, 0.49}, {2.4, 0}, {1.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{2.6, 0}, {3.4, 2.05}]}, 
+     {GrayLevel[0], 
+      LineBox[{{2.6, 0}, {2.6, 2.05}, {3.4, 2.05}, {3.4, 0}, {2.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{3.6, 0}, {4.4, 1.4}]}, 
+     {GrayLevel[0], 
+      LineBox[{{3.6, 0}, {3.6, 1.4}, {4.4, 1.4}, {4.4, 0}, {3.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{4.6, 0}, {5.4, 1.17}]}, 
+     {GrayLevel[0], 
+      LineBox[{{4.6, 0}, {4.6, 1.17}, {5.4, 1.17}, {5.4, 0}, {4.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{5.6, 0}, {6.4, 0.91}]}, 
+     {GrayLevel[0], 
+      LineBox[{{5.6, 0}, {5.6, 0.91}, {6.4, 0.91}, {6.4, 0}, {5.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{6.6, 0}, {7.4, 0.75}]}, 
+     {GrayLevel[0], 
+      LineBox[{{6.6, 0}, {6.6, 0.75}, {7.4, 0.75}, {7.4, 0}, {6.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{7.6, 0}, {8.4, 0.65}]}, 
+     {GrayLevel[0], 
+      LineBox[{{7.6, 0}, {7.6, 0.65}, {8.4, 0.65}, {8.4, 0}, {7.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{8.6, 0}, {9.4, 0.57}]}, 
+     {GrayLevel[0], 
+      LineBox[{{8.6, 0}, {8.6, 0.57}, {9.4, 0.57}, {9.4, 0}, {8.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{9.6, 0}, {10.4, 0.51}]}, 
+     {GrayLevel[0], 
+      LineBox[{{9.6, 0}, {9.6, 0.51}, {10.4, 0.51}, {10.4, 0}, {9.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{10.6, 0}, {11.4, 2.23}]}, 
+     {GrayLevel[0], 
+      LineBox[{{10.6, 0}, {10.6, 2.23}, {11.4, 2.23}, {11.4, 0}, {
+        10.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{11.6, 0}, {12.4, 1.72}]}, 
+     {GrayLevel[0], 
+      LineBox[{{11.6, 0}, {11.6, 1.72}, {12.4, 1.72}, {12.4, 0}, {
+        11.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{12.6, 0}, {13.4, 1.82}]}, 
+     {GrayLevel[0], 
+      LineBox[{{12.6, 0}, {12.6, 1.82}, {13.4, 1.82}, {13.4, 0}, {
+        12.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{13.6, 0}, {14.4, 1.46}]}, 
+     {GrayLevel[0], 
+      LineBox[{{13.6, 0}, {13.6, 1.46}, {14.4, 1.46}, {14.4, 0}, {
+        13.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{14.6, 0}, {15.4, 1.23}]}, 
+     {GrayLevel[0], 
+      LineBox[{{14.6, 0}, {14.6, 1.23}, {15.4, 1.23}, {15.4, 0}, {
+        14.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{15.6, 0}, {16.4, 1.09}]}, 
+     {GrayLevel[0], 
+      LineBox[{{15.6, 0}, {15.6, 1.09}, {16.4, 1.09}, {16.4, 0}, {
+        15.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{16.6, 0}, {17.4, 0.97}]}, 
+     {GrayLevel[0], 
+      LineBox[{{16.6, 0}, {16.6, 0.97}, {17.4, 0.97}, {17.4, 0}, {
+        16.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{17.6, 0}, {18.4, 0.88}]}, 
+     {GrayLevel[0], 
+      LineBox[{{17.6, 0}, {17.6, 0.88}, {18.4, 0.88}, {18.4, 0}, {
+        17.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{18.6, 0}, {19.4, 2.77}]}, 
+     {GrayLevel[0], 
+      LineBox[{{18.6, 0}, {18.6, 2.77}, {19.4, 2.77}, {19.4, 0}, {
+        18.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{19.6, 0}, {20.4, 2.23}]}, 
+     {GrayLevel[0], 
+      LineBox[{{19.6, 0}, {19.6, 2.23}, {20.4, 2.23}, {20.4, 0}, {
+        19.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{20.6, 0}, {21.4, 2.09}]}, 
+     {GrayLevel[0], 
+      LineBox[{{20.6, 0}, {20.6, 2.09}, {21.4, 2.09}, {21.4, 0}, {
+        20.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{21.6, 0}, {22.4, 2}]}, 
+     {GrayLevel[0], 
+      LineBox[{{21.6, 0}, {21.6, 2}, {22.4, 2}, {22.4, 0}, {21.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{22.6, 0}, {23.4, 1.92}]}, 
+     {GrayLevel[0], 
+      LineBox[{{22.6, 0}, {22.6, 1.92}, {23.4, 1.92}, {23.4, 0}, {
+        22.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{23.6, 0}, {24.4, 1.85}]}, 
+     {GrayLevel[0], 
+      LineBox[{{23.6, 0}, {23.6, 1.85}, {24.4, 1.85}, {24.4, 0}, {
+        23.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{24.6, 0}, {25.4, 1.79}]}, 
+     {GrayLevel[0], 
+      LineBox[{{24.6, 0}, {24.6, 1.79}, {25.4, 1.79}, {25.4, 0}, {
+        24.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{25.6, 0}, {26.4, 1.72}]}, 
+     {GrayLevel[0], 
+      LineBox[{{25.6, 0}, {25.6, 1.72}, {26.4, 1.72}, {26.4, 0}, {
+        25.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{26.6, 0}, {27.4, 1.67}]}, 
+     {GrayLevel[0], 
+      LineBox[{{26.6, 0}, {26.6, 1.67}, {27.4, 1.67}, {27.4, 0}, {
+        26.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{27.6, 0}, {28.4, 1.62}]}, 
+     {GrayLevel[0], 
+      LineBox[{{27.6, 0}, {27.6, 1.62}, {28.4, 1.62}, {28.4, 0}, {
+        27.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{28.6, 0}, {29.4, 1.57}]}, 
+     {GrayLevel[0], 
+      LineBox[{{28.6, 0}, {28.6, 1.57}, {29.4, 1.57}, {29.4, 0}, {
+        28.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{29.6, 0}, {30.4, 1.53}]}, 
+     {GrayLevel[0], 
+      LineBox[{{29.6, 0}, {29.6, 1.53}, {30.4, 1.53}, {30.4, 0}, {
+        29.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{30.6, 0}, {31.4, 1.81}]}, 
+     {GrayLevel[0], 
+      LineBox[{{30.6, 0}, {30.6, 1.81}, {31.4, 1.81}, {31.4, 0}, {
+        30.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{31.6, 0}, {32.4, 1.33}]}, 
+     {GrayLevel[0], 
+      LineBox[{{31.6, 0}, {31.6, 1.33}, {32.4, 1.33}, {32.4, 0}, {
+        31.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{32.6, 0}, {33.4, 1.22}]}, 
+     {GrayLevel[0], 
+      LineBox[{{32.6, 0}, {32.6, 1.22}, {33.4, 1.22}, {33.4, 0}, {
+        32.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{33.6, 0}, {34.4, 1.12}]}, 
+     {GrayLevel[0], 
+      LineBox[{{33.6, 0}, {33.6, 1.12}, {34.4, 1.12}, {34.4, 0}, {
+        33.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{34.6, 0}, {35.4, 1.03}]}, 
+     {GrayLevel[0], 
+      LineBox[{{34.6, 0}, {34.6, 1.03}, {35.4, 1.03}, {35.4, 0}, {
+        34.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{35.6, 0}, {36.4, 2.98}]}, 
+     {GrayLevel[0], 
+      LineBox[{{35.6, 0}, {35.6, 2.98}, {36.4, 2.98}, {36.4, 0}, {
+        35.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{36.6, 0}, {37.4, 2.45}]}, 
+     {GrayLevel[0], 
+      LineBox[{{36.6, 0}, {36.6, 2.45}, {37.4, 2.45}, {37.4, 0}, {
+        36.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{37.6, 0}, {38.4, 2.27}]}, 
+     {GrayLevel[0], 
+      LineBox[{{37.6, 0}, {37.6, 2.27}, {38.4, 2.27}, {38.4, 0}, {
+        37.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{38.6, 0}, {39.4, 2.16}]}, 
+     {GrayLevel[0], 
+      LineBox[{{38.6, 0}, {38.6, 2.16}, {39.4, 2.16}, {39.4, 0}, {
+        38.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{39.6, 0}, {40.4, 2.08}]}, 
+     {GrayLevel[0], 
+      LineBox[{{39.6, 0}, {39.6, 2.08}, {40.4, 2.08}, {40.4, 0}, {
+        39.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{40.6, 0}, {41.4, 2.01}]}, 
+     {GrayLevel[0], 
+      LineBox[{{40.6, 0}, {40.6, 2.01}, {41.4, 2.01}, {41.4, 0}, {
+        40.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{41.6, 0}, {42.4, 1.95}]}, 
+     {GrayLevel[0], 
+      LineBox[{{41.6, 0}, {41.6, 1.95}, {42.4, 1.95}, {42.4, 0}, {
+        41.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{42.6, 0}, {43.4, 1.89}]}, 
+     {GrayLevel[0], 
+      LineBox[{{42.6, 0}, {42.6, 1.89}, {43.4, 1.89}, {43.4, 0}, {
+        42.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{43.6, 0}, {44.4, 1.83}]}, 
+     {GrayLevel[0], 
+      LineBox[{{43.6, 0}, {43.6, 1.83}, {44.4, 1.83}, {44.4, 0}, {
+        43.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{44.6, 0}, {45.4, 1.79}]}, 
+     {GrayLevel[0], 
+      LineBox[{{44.6, 0}, {44.6, 1.79}, {45.4, 1.79}, {45.4, 0}, {
+        44.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{45.6, 0}, {46.4, 1.75}]}, 
+     {GrayLevel[0], 
+      LineBox[{{45.6, 0}, {45.6, 1.75}, {46.4, 1.75}, {46.4, 0}, {
+        45.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{46.6, 0}, {47.4, 1.71}]}, 
+     {GrayLevel[0], 
+      LineBox[{{46.6, 0}, {46.6, 1.71}, {47.4, 1.71}, {47.4, 0}, {
+        46.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{47.6, 0}, {48.4, 2}]}, 
+     {GrayLevel[0], 
+      LineBox[{{47.6, 0}, {47.6, 2}, {48.4, 2}, {48.4, 0}, {47.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{48.6, 0}, {49.4, 1.72}]}, 
+     {GrayLevel[0], 
+      LineBox[{{48.6, 0}, {48.6, 1.72}, {49.4, 1.72}, {49.4, 0}, {
+        48.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{49.6, 0}, {50.4, 1.53}]}, 
+     {GrayLevel[0], 
+      LineBox[{{49.6, 0}, {49.6, 1.53}, {50.4, 1.53}, {50.4, 0}, {
+        49.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{50.6, 0}, {51.4, 1.42}]}, 
+     {GrayLevel[0], 
+      LineBox[{{50.6, 0}, {50.6, 1.42}, {51.4, 1.42}, {51.4, 0}, {
+        50.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{51.6, 0}, {52.4, 1.32}]}, 
+     {GrayLevel[0], 
+      LineBox[{{51.6, 0}, {51.6, 1.32}, {52.4, 1.32}, {52.4, 0}, {
+        51.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{52.6, 0}, {53.4, 1.24}]}, 
+     {GrayLevel[0], 
+      LineBox[{{52.6, 0}, {52.6, 1.24}, {53.4, 1.24}, {53.4, 0}, {
+        52.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{53.6, 0}, {54.4, 3.34}]}, 
+     {GrayLevel[0], 
+      LineBox[{{53.6, 0}, {53.6, 3.34}, {54.4, 3.34}, {54.4, 0}, {
+        53.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{54.6, 0}, {55.4, 2.78}]}, 
+     {GrayLevel[0], 
+      LineBox[{{54.6, 0}, {54.6, 2.78}, {55.4, 2.78}, {55.4, 0}, {
+        54.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{55.6, 0}, {56.4, 2.74}]}, 
+     {GrayLevel[0], 
+      LineBox[{{55.6, 0}, {55.6, 2.74}, {56.4, 2.74}, {56.4, 0}, {
+        55.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{56.6, 0}, {57.4, 2.7}]}, 
+     {GrayLevel[0], 
+      LineBox[{{56.6, 0}, {56.6, 2.7}, {57.4, 2.7}, {57.4, 0}, {56.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{57.6, 0}, {58.4, 2.67}]}, 
+     {GrayLevel[0], 
+      LineBox[{{57.6, 0}, {57.6, 2.67}, {58.4, 2.67}, {58.4, 0}, {
+        57.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{58.6, 0}, {59.4, 2.64}]}, 
+     {GrayLevel[0], 
+      LineBox[{{58.6, 0}, {58.6, 2.64}, {59.4, 2.64}, {59.4, 0}, {
+        58.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{59.6, 0}, {60.4, 2.62}]}, 
+     {GrayLevel[0], 
+      LineBox[{{59.6, 0}, {59.6, 2.62}, {60.4, 2.62}, {60.4, 0}, {
+        59.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{60.6, 0}, {61.4, 2.59}]}, 
+     {GrayLevel[0], 
+      LineBox[{{60.6, 0}, {60.6, 2.59}, {61.4, 2.59}, {61.4, 0}, {
+        60.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{61.6, 0}, {62.4, 2.56}]}, 
+     {GrayLevel[0], 
+      LineBox[{{61.6, 0}, {61.6, 2.56}, {62.4, 2.56}, {62.4, 0}, {
+        61.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{62.6, 0}, {63.4, 2.54}]}, 
+     {GrayLevel[0], 
+      LineBox[{{62.6, 0}, {62.6, 2.54}, {63.4, 2.54}, {63.4, 0}, {
+        62.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{63.6, 0}, {64.4, 2.51}]}, 
+     {GrayLevel[0], 
+      LineBox[{{63.6, 0}, {63.6, 2.51}, {64.4, 2.51}, {64.4, 0}, {
+        63.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{64.6, 0}, {65.4, 2.49}]}, 
+     {GrayLevel[0], 
+      LineBox[{{64.6, 0}, {64.6, 2.49}, {65.4, 2.49}, {65.4, 0}, {
+        64.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{65.6, 0}, {66.4, 2.47}]}, 
+     {GrayLevel[0], 
+      LineBox[{{65.6, 0}, {65.6, 2.47}, {66.4, 2.47}, {66.4, 0}, {
+        65.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{66.6, 0}, {67.4, 2.45}]}, 
+     {GrayLevel[0], 
+      LineBox[{{66.6, 0}, {66.6, 2.45}, {67.4, 2.45}, {67.4, 0}, {
+        66.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{67.6, 0}, {68.4, 2.42}]}, 
+     {GrayLevel[0], 
+      LineBox[{{67.6, 0}, {67.6, 2.42}, {68.4, 2.42}, {68.4, 0}, {
+        67.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{68.6, 0}, {69.4, 2.4}]}, 
+     {GrayLevel[0], 
+      LineBox[{{68.6, 0}, {68.6, 2.4}, {69.4, 2.4}, {69.4, 0}, {68.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{69.6, 0}, {70.4, 2.25}]}, 
+     {GrayLevel[0], 
+      LineBox[{{69.6, 0}, {69.6, 2.25}, {70.4, 2.25}, {70.4, 0}, {
+        69.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{70.6, 0}, {71.4, 2.16}]}, 
+     {GrayLevel[0], 
+      LineBox[{{70.6, 0}, {70.6, 2.16}, {71.4, 2.16}, {71.4, 0}, {
+        70.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{71.6, 0}, {72.4, 2.09}]}, 
+     {GrayLevel[0], 
+      LineBox[{{71.6, 0}, {71.6, 2.09}, {72.4, 2.09}, {72.4, 0}, {
+        71.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{72.6, 0}, {73.4, 2.02}]}, 
+     {GrayLevel[0], 
+      LineBox[{{72.6, 0}, {72.6, 2.02}, {73.4, 2.02}, {73.4, 0}, {
+        72.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{73.6, 0}, {74.4, 1.97}]}, 
+     {GrayLevel[0], 
+      LineBox[{{73.6, 0}, {73.6, 1.97}, {74.4, 1.97}, {74.4, 0}, {
+        73.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{74.6, 0}, {75.4, 1.92}]}, 
+     {GrayLevel[0], 
+      LineBox[{{74.6, 0}, {74.6, 1.92}, {75.4, 1.92}, {75.4, 0}, {
+        74.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{75.6, 0}, {76.4, 1.87}]}, 
+     {GrayLevel[0], 
+      LineBox[{{75.6, 0}, {75.6, 1.87}, {76.4, 1.87}, {76.4, 0}, {
+        75.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{76.6, 0}, {77.4, 1.83}]}, 
+     {GrayLevel[0], 
+      LineBox[{{76.6, 0}, {76.6, 1.83}, {77.4, 1.83}, {77.4, 0}, {
+        76.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{77.6, 0}, {78.4, 1.79}]}, 
+     {GrayLevel[0], 
+      LineBox[{{77.6, 0}, {77.6, 1.79}, {78.4, 1.79}, {78.4, 0}, {
+        77.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{78.6, 0}, {79.4, 1.76}]}, 
+     {GrayLevel[0], 
+      LineBox[{{78.6, 0}, {78.6, 1.76}, {79.4, 1.76}, {79.4, 0}, {
+        78.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{79.6, 0}, {80.4, 2.08}]}, 
+     {GrayLevel[0], 
+      LineBox[{{79.6, 0}, {79.6, 2.08}, {80.4, 2.08}, {80.4, 0}, {
+        79.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{80.6, 0}, {81.4, 1.81}]}, 
+     {GrayLevel[0], 
+      LineBox[{{80.6, 0}, {80.6, 1.81}, {81.4, 1.81}, {81.4, 0}, {
+        80.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{81.6, 0}, {82.4, 1.63}]}, 
+     {GrayLevel[0], 
+      LineBox[{{81.6, 0}, {81.6, 1.63}, {82.4, 1.63}, {82.4, 0}, {
+        81.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{82.6, 0}, {83.4, 1.53}]}, 
+     {GrayLevel[0], 
+      LineBox[{{82.6, 0}, {82.6, 1.53}, {83.4, 1.53}, {83.4, 0}, {
+        82.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{83.6, 0}, {84.4, 1.43}]}, 
+     {GrayLevel[0], 
+      LineBox[{{83.6, 0}, {83.6, 1.43}, {84.4, 1.43}, {84.4, 0}, {
+        83.6, 0}}]}}, {
+     {RGBColor[0, 1, 0], RectangleBox[{84.6, 0}, {85.4, 1.34}]}, 
+     {GrayLevel[0], 
+      LineBox[{{84.6, 0}, {84.6, 1.34}, {85.4, 1.34}, {85.4, 0}, {
+        84.6, 0}}]}}},
+   AlignmentPoint->Center,
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->True,
+   AxesLabel->None,
+   AxesOrigin->{0.39999999999999997`, 0},
+   AxesStyle->{},
+   Background->None,
+   BaseStyle->{},
+   BaselinePosition->Automatic,
+   ColorOutput->Automatic,
+   ContentSelectable->Automatic,
+   CoordinatesToolOptions:>Automatic,
+   DisplayFunction:>$DisplayFunction,
+   Epilog->{},
+   FormatType:>TraditionalForm,
+   Frame->False,
+   FrameLabel->None,
+   FrameStyle->{},
+   FrameTicks->{{{1., 
+       FormBox["\"H\"", TraditionalForm], 0}, {2., 
+       FormBox["\"He\"", TraditionalForm], 0}, {3., 
+       FormBox["\"Li\"", TraditionalForm], 0}, {4., 
+       FormBox["\"Be\"", TraditionalForm], 0}, {5., 
+       FormBox["\"B\"", TraditionalForm], 0}, {6., 
+       FormBox["\"C\"", TraditionalForm], 0}, {7., 
+       FormBox["\"N\"", TraditionalForm], 0}, {8., 
+       FormBox["\"O\"", TraditionalForm], 0}, {9., 
+       FormBox["\"F\"", TraditionalForm], 0}, {10., 
+       FormBox["\"Ne\"", TraditionalForm], 0}, {11., 
+       FormBox["\"Na\"", TraditionalForm], 0}, {12., 
+       FormBox["\"Mg\"", TraditionalForm], 0}, {13., 
+       FormBox["\"Al\"", TraditionalForm], 0}, {14., 
+       FormBox["\"Si\"", TraditionalForm], 0}, {15., 
+       FormBox["\"P\"", TraditionalForm], 0}, {16., 
+       FormBox["\"S\"", TraditionalForm], 0}, {17., 
+       FormBox["\"Cl\"", TraditionalForm], 0}, {18., 
+       FormBox["\"Ar\"", TraditionalForm], 0}, {19., 
+       FormBox["\"K\"", TraditionalForm], 0}, {20., 
+       FormBox["\"Ca\"", TraditionalForm], 0}, {21., 
+       FormBox["\"Sc\"", TraditionalForm], 0}, {22., 
+       FormBox["\"Ti\"", TraditionalForm], 0}, {23., 
+       FormBox["\"V\"", TraditionalForm], 0}, {24., 
+       FormBox["\"Cr\"", TraditionalForm], 0}, {25., 
+       FormBox["\"Mn\"", TraditionalForm], 0}, {26., 
+       FormBox["\"Fe\"", TraditionalForm], 0}, {27., 
+       FormBox["\"Co\"", TraditionalForm], 0}, {28., 
+       FormBox["\"Ni\"", TraditionalForm], 0}, {29., 
+       FormBox["\"Cu\"", TraditionalForm], 0}, {30., 
+       FormBox["\"Zn\"", TraditionalForm], 0}, {31., 
+       FormBox["\"Ga\"", TraditionalForm], 0}, {32., 
+       FormBox["\"As\"", TraditionalForm], 0}, {33., 
+       FormBox["\"Se\"", TraditionalForm], 0}, {34., 
+       FormBox["\"Br\"", TraditionalForm], 0}, {35., 
+       FormBox["\"Kr\"", TraditionalForm], 0}, {36., 
+       FormBox["\"Rb\"", TraditionalForm], 0}, {37., 
+       FormBox["\"Sr\"", TraditionalForm], 0}, {38., 
+       FormBox["\"Y\"", TraditionalForm], 0}, {39., 
+       FormBox["\"Zr\"", TraditionalForm], 0}, {40., 
+       FormBox["\"Nb\"", TraditionalForm], 0}, {41., 
+       FormBox["\"Mo\"", TraditionalForm], 0}, {42., 
+       FormBox["\"Tc#\"", TraditionalForm], 0}, {43., 
+       FormBox["\"Rn\"", TraditionalForm], 0}, {44., 
+       FormBox["\"Rh\"", TraditionalForm], 0}, {45., 
+       FormBox["\"Pd\"", TraditionalForm], 0}, {46., 
+       FormBox["\"Ag\"", TraditionalForm], 0}, {47., 
+       FormBox["\"Cd\"", TraditionalForm], 0}, {48., 
+       FormBox["\"In\"", TraditionalForm], 0}, {49., 
+       FormBox["\"Sn\"", TraditionalForm], 0}, {50., 
+       FormBox["\"Sb\"", TraditionalForm], 0}, {51., 
+       FormBox["\"Te\"", TraditionalForm], 0}, {52., 
+       FormBox["\"I\"", TraditionalForm], 0}, {53., 
+       FormBox["\"Xe\"", TraditionalForm], 0}, {54., 
+       FormBox["\"Cs\"", TraditionalForm], 0}, {55., 
+       FormBox["\"Ba\"", TraditionalForm], 0}, {56., 
+       FormBox["\"La\"", TraditionalForm], 0}, {57., 
+       FormBox["\"Ce\"", TraditionalForm], 0}, {58., 
+       FormBox["\"Dr\"", TraditionalForm], 0}, {59., 
+       FormBox["\"Nd\"", TraditionalForm], 0}, {60., 
+       FormBox["\"Pm\"", TraditionalForm], 0}, {61., 
+       FormBox["\"Sm\"", TraditionalForm], 0}, {62., 
+       FormBox["\"Eu\"", TraditionalForm], 0}, {63., 
+       FormBox["\"Gd\"", TraditionalForm], 0}, {64., 
+       FormBox["\"Tb\"", TraditionalForm], 0}, {65., 
+       FormBox["\"Dy\"", TraditionalForm], 0}, {66., 
+       FormBox["\"Ho\"", TraditionalForm], 0}, {67., 
+       FormBox["\"Er\"", TraditionalForm], 0}, {68., 
+       FormBox["\"Tm\"", TraditionalForm], 0}, {69., 
+       FormBox["\"Yb\"", TraditionalForm], 0}, {70., 
+       FormBox["\"Lu\"", TraditionalForm], 0}, {71., 
+       FormBox["\"Hf\"", TraditionalForm], 0}, {72., 
+       FormBox["\"Ta\"", TraditionalForm], 0}, {73., 
+       FormBox["\"W\"", TraditionalForm], 0}, {74., 
+       FormBox["\"Re\"", TraditionalForm], 0}, {75., 
+       FormBox["\"Os\"", TraditionalForm], 0}, {76., 
+       FormBox["\"Ir\"", TraditionalForm], 0}, {77., 
+       FormBox["\"Dt\"", TraditionalForm], 0}, {78., 
+       FormBox["\"Au\"", TraditionalForm], 0}, {79., 
+       FormBox["\"Hg\"", TraditionalForm], 0}, {80., 
+       FormBox["\"Tl\"", TraditionalForm], 0}, {81., 
+       FormBox["\"Pb\"", TraditionalForm], 0}, {82., 
+       FormBox["\"Bi\"", TraditionalForm], 0}, {83., 
+       FormBox["\"Po\"", TraditionalForm], 0}, {84., 
+       FormBox["\"At#\"", TraditionalForm], 0}, {85., 
+       FormBox["\"Rn\"", TraditionalForm], 0}}, Automatic},
+   FrameTicksStyle->{},
+   GridLines->None,
+   GridLinesStyle->{},
+   ImageMargins->0.,
+   ImagePadding->All,
+   ImageSize->{1552., Automatic},
+   ImageSizeRaw->Automatic,
+   LabelStyle->{},
+   Method->Automatic,
+   PlotLabel->None,
+   PlotRange->{{0.39999999999999997`, 85.60000000000001}, All},
+   PlotRangeClipping->True,
+   PlotRangePadding->Automatic,
+   PlotRegion->Automatic,
+   PreserveImageOptions->Automatic,
+   Prolog->{},
+   RotateLabel->True,
+   Ticks->{{{1., 
+       FormBox["\"H\"", TraditionalForm], 0}, {2., 
+       FormBox["\"He\"", TraditionalForm], 0}, {3., 
+       FormBox["\"Li\"", TraditionalForm], 0}, {4., 
+       FormBox["\"Be\"", TraditionalForm], 0}, {5., 
+       FormBox["\"B\"", TraditionalForm], 0}, {6., 
+       FormBox["\"C\"", TraditionalForm], 0}, {7., 
+       FormBox["\"N\"", TraditionalForm], 0}, {8., 
+       FormBox["\"O\"", TraditionalForm], 0}, {9., 
+       FormBox["\"F\"", TraditionalForm], 0}, {10., 
+       FormBox["\"Ne\"", TraditionalForm], 0}, {11., 
+       FormBox["\"Na\"", TraditionalForm], 0}, {12., 
+       FormBox["\"Mg\"", TraditionalForm], 0}, {13., 
+       FormBox["\"Al\"", TraditionalForm], 0}, {14., 
+       FormBox["\"Si\"", TraditionalForm], 0}, {15., 
+       FormBox["\"P\"", TraditionalForm], 0}, {16., 
+       FormBox["\"S\"", TraditionalForm], 0}, {17., 
+       FormBox["\"Cl\"", TraditionalForm], 0}, {18., 
+       FormBox["\"Ar\"", TraditionalForm], 0}, {19., 
+       FormBox["\"K\"", TraditionalForm], 0}, {20., 
+       FormBox["\"Ca\"", TraditionalForm], 0}, {21., 
+       FormBox["\"Sc\"", TraditionalForm], 0}, {22., 
+       FormBox["\"Ti\"", TraditionalForm], 0}, {23., 
+       FormBox["\"V\"", TraditionalForm], 0}, {24., 
+       FormBox["\"Cr\"", TraditionalForm], 0}, {25., 
+       FormBox["\"Mn\"", TraditionalForm], 0}, {26., 
+       FormBox["\"Fe\"", TraditionalForm], 0}, {27., 
+       FormBox["\"Co\"", TraditionalForm], 0}, {28., 
+       FormBox["\"Ni\"", TraditionalForm], 0}, {29., 
+       FormBox["\"Cu\"", TraditionalForm], 0}, {30., 
+       FormBox["\"Zn\"", TraditionalForm], 0}, {31., 
+       FormBox["\"Ga\"", TraditionalForm], 0}, {32., 
+       FormBox["\"As\"", TraditionalForm], 0}, {33., 
+       FormBox["\"Se\"", TraditionalForm], 0}, {34., 
+       FormBox["\"Br\"", TraditionalForm], 0}, {35., 
+       FormBox["\"Kr\"", TraditionalForm], 0}, {36., 
+       FormBox["\"Rb\"", TraditionalForm], 0}, {37., 
+       FormBox["\"Sr\"", TraditionalForm], 0}, {38., 
+       FormBox["\"Y\"", TraditionalForm], 0}, {39., 
+       FormBox["\"Zr\"", TraditionalForm], 0}, {40., 
+       FormBox["\"Nb\"", TraditionalForm], 0}, {41., 
+       FormBox["\"Mo\"", TraditionalForm], 0}, {42., 
+       FormBox["\"Tc#\"", TraditionalForm], 0}, {43., 
+       FormBox["\"Rn\"", TraditionalForm], 0}, {44., 
+       FormBox["\"Rh\"", TraditionalForm], 0}, {45., 
+       FormBox["\"Pd\"", TraditionalForm], 0}, {46., 
+       FormBox["\"Ag\"", TraditionalForm], 0}, {47., 
+       FormBox["\"Cd\"", TraditionalForm], 0}, {48., 
+       FormBox["\"In\"", TraditionalForm], 0}, {49., 
+       FormBox["\"Sn\"", TraditionalForm], 0}, {50., 
+       FormBox["\"Sb\"", TraditionalForm], 0}, {51., 
+       FormBox["\"Te\"", TraditionalForm], 0}, {52., 
+       FormBox["\"I\"", TraditionalForm], 0}, {53., 
+       FormBox["\"Xe\"", TraditionalForm], 0}, {54., 
+       FormBox["\"Cs\"", TraditionalForm], 0}, {55., 
+       FormBox["\"Ba\"", TraditionalForm], 0}, {56., 
+       FormBox["\"La\"", TraditionalForm], 0}, {57., 
+       FormBox["\"Ce\"", TraditionalForm], 0}, {58., 
+       FormBox["\"Dr\"", TraditionalForm], 0}, {59., 
+       FormBox["\"Nd\"", TraditionalForm], 0}, {60., 
+       FormBox["\"Pm\"", TraditionalForm], 0}, {61., 
+       FormBox["\"Sm\"", TraditionalForm], 0}, {62., 
+       FormBox["\"Eu\"", TraditionalForm], 0}, {63., 
+       FormBox["\"Gd\"", TraditionalForm], 0}, {64., 
+       FormBox["\"Tb\"", TraditionalForm], 0}, {65., 
+       FormBox["\"Dy\"", TraditionalForm], 0}, {66., 
+       FormBox["\"Ho\"", TraditionalForm], 0}, {67., 
+       FormBox["\"Er\"", TraditionalForm], 0}, {68., 
+       FormBox["\"Tm\"", TraditionalForm], 0}, {69., 
+       FormBox["\"Yb\"", TraditionalForm], 0}, {70., 
+       FormBox["\"Lu\"", TraditionalForm], 0}, {71., 
+       FormBox["\"Hf\"", TraditionalForm], 0}, {72., 
+       FormBox["\"Ta\"", TraditionalForm], 0}, {73., 
+       FormBox["\"W\"", TraditionalForm], 0}, {74., 
+       FormBox["\"Re\"", TraditionalForm], 0}, {75., 
+       FormBox["\"Os\"", TraditionalForm], 0}, {76., 
+       FormBox["\"Ir\"", TraditionalForm], 0}, {77., 
+       FormBox["\"Dt\"", TraditionalForm], 0}, {78., 
+       FormBox["\"Au\"", TraditionalForm], 0}, {79., 
+       FormBox["\"Hg\"", TraditionalForm], 0}, {80., 
+       FormBox["\"Tl\"", TraditionalForm], 0}, {81., 
+       FormBox["\"Pb\"", TraditionalForm], 0}, {82., 
+       FormBox["\"Bi\"", TraditionalForm], 0}, {83., 
+       FormBox["\"Po\"", TraditionalForm], 0}, {84., 
+       FormBox["\"At#\"", TraditionalForm], 0}, {85., 
+       FormBox["\"Rn\"", TraditionalForm], 0}}, Automatic},
+   TicksStyle->{}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.617190803146315*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", "s", "]"}]], "Input",
+ CellChangeTimes->{3.6171908309769073`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[
+   {Hue[0.67, 0.6, 0.6], PointBox[CompressedData["
+1:eJxdlDlsE1EQhhdzyhWFCwoUDkXIIISAEAiH4z+nndu7trtUSNBCWmhek5oa
+2lCnTmlBC3VKCKIAJYgAcriv9/abYt+TLOvz7P4z8888n7p9L7tTSpKk+//j
+v/OzW29uPaisN97X+UHLj571q8uv4CO6G06inI/Ce8Qr2hhY3U43PsPHdMLj
+wAf4OO+9g0/q5Qt/3sKnVStvrt2vvYEHlQXB1/AZ+Wh5cx86VQX51Z/Ez5Hv
+N3ye+r/CF7Te8A1+gS9qJST8BF9SSF/+CF/W2SCwAw/Bh8h/JapnmP7Nn6sy
+H/Ova8T/oDeiJ4/9sXqv66mXW/sF34j6u8n7P+Bb2vHh7e9wjf6NR/Ww4jv+
+Bte1V/UNmL6Uz7ufsxP5zJ8x9PHHjaG3S3yc/g/n/blx+tlPvxP4VSI+QT7z
+a5J+8cdNKshXzK8pDYXzl/xT7If5N40e/rnpyL8GOrBrsA/mZ7M4H9eM/J4p
++udm8N/2fRa/zb9Z/DD/5ni+jP4c9dv+zOPvQeLz+AcnC9Rr8QXyWXyReR4g
+vkg+OFmifosvcZ8s3sJvWC3qYX6uped9nwDutaL5ptQHK2Ve9n7KcyXeT6P5
+Z8X7oox9sXlkzIP597Lo/rSpl/mrHe1Du7gPvTb6th+d4v6pU7wfroM/3Lde
+J7pPXYV0W+yDuvyf9Ov/AE2Icoo=
+     "]]},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->True,
+   AxesOrigin->{0, Automatic},
+   PlotRange->Automatic,
+   PlotRangeClipping->True], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6171908218173833`*^9, 3.6171908319659634`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"s", ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  GraphicsBox[
+   {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
+1:eJxdlDlsE1EQhhdzyhWFCwoUDkXIIISAEAiH4z+nndu7trtUSNBCWmhek5oa
+2lCnTmlBC3VKCKIAJYgAcriv9/abYt+TLOvz7P4z8888n7p9L7tTSpKk+//j
+v/OzW29uPaisN97X+UHLj571q8uv4CO6G06inI/Ce8Qr2hhY3U43PsPHdMLj
+wAf4OO+9g0/q5Qt/3sKnVStvrt2vvYEHlQXB1/AZ+Wh5cx86VQX51Z/Ez5Hv
+N3ye+r/CF7Te8A1+gS9qJST8BF9SSF/+CF/W2SCwAw/Bh8h/JapnmP7Nn6sy
+H/Ova8T/oDeiJ4/9sXqv66mXW/sF34j6u8n7P+Bb2vHh7e9wjf6NR/Ww4jv+
+Bte1V/UNmL6Uz7ufsxP5zJ8x9PHHjaG3S3yc/g/n/blx+tlPvxP4VSI+QT7z
+a5J+8cdNKshXzK8pDYXzl/xT7If5N40e/rnpyL8GOrBrsA/mZ7M4H9eM/J4p
++udm8N/2fRa/zb9Z/DD/5ni+jP4c9dv+zOPvQeLz+AcnC9Rr8QXyWXyReR4g
+vkg+OFmifosvcZ8s3sJvWC3qYX6uped9nwDutaL5ptQHK2Ve9n7KcyXeT6P5
+Z8X7oox9sXlkzIP597Lo/rSpl/mrHe1Du7gPvTb6th+d4v6pU7wfroM/3Lde
+J7pPXYV0W+yDuvyf9Ov/AE2Icoo=
+     "]]},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->True,
+   AxesOrigin->{0, Automatic},
+   PlotRange->Automatic,
+   PlotRangeClipping->True], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6171908353391566`*^9, 3.6171909440863767`*^9},
+ ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztXVmsXtdV/vOPd/L19XydEOKW0gY6JfGNp3iKE8eFJNAWqkTtjahlNdgC
+k6lpSqE0F5AiVSAseKgqiqoKlz4UVEVIjlBVUQEutFQdEJNIBSqqbp8QDzwg
+ni7/WnsNe53znX3OvZlAqqVr33//++z1rXnt6fjB8x+8+IHL5z946cL5A+ee
+PP/4xUsXnjpw32NPTpsGN/R6N1zs9XrfO9Cj3zemv8pfG72N9fVL9Be1bO73
+9/I/871rq73Kn5Xelevr/O3G9bXesaztPm6d6b24ttI7tnY99an3O8uNw97G
+VR/70avrfW2Ove+VZhpU/0wHb+i9nNC/T9BHJFd7V/j3670rK8IFPb2y1ntx
++n2CNVt5Bve9h79d4DEfNYlkffFzZ/QxBr3au1YlgR/bl5ha5X/GDHAqLxcv
+yXH1apLIgDWmX98tbVdcdr0+/z1IPKZHe+jZM6JN7aPkTD5tZGeCyAJvzY/u
+Tbw+wv+MetfW9GknrI/lijKKV9fMPPPv5Xf0qPJZtVpCRZ9bH50IVTKFnomq
+hLbCJInp0Qi0zCSJcjUJZgtM9lanlnd1XYw3ib4Lk+ppK91UUmWSqSWbLz2W
+k7tyFTJYeG7GfOtRDS5RH61yXUla52HaHwWaNMcu+NY94srXpqq4kttds2Pc
+k7Vp974MU3VReS6IJLhhQFhww530z4CyyVkJXS+urZqDcW5A7k2qTu0pes+Z
+rcHAWu0+sO4uv3HTIxZTQyh2W2t4bF/GYG+Q8qVI76xZ7PUscKbRGtJOx8yX
+us2GkS2SV5Kp5r1uWXK5mR3O6j/76nxPaljfoK9X6a8bmp/aAdqWXuZ+r9Wz
+rxW+0Q/E/X9E3G94FcgjGi833SOgbX8z2/eDtgdeQr8CqVpU4q9fzVj3qnz/
+/5OrH6Dm77nuqWd2b7PZkM7J8iJu0DZ6pSTyIm+sz09LB61G0GgpgA1m/ue7
+34sUHnAKuLI0CtlMBFEYprbl//jHf/3+ux78jFN40ChUSyb5HChIvcoURkRA
+StZ3/uXz39g4deKT/Onm1PaJ3/71PzvyD1/+e6f11s60sjq5wM3v/N5zXzSq
+N6VvSIYvPH35C//20Lv/8P0v/NHfMOG3tREemBqm08zrbilUEw6bAfz5Yxf/
+hACQWHs3pjGW/us7//6FX3ny+Xd89dq3Pv3cR18gEL0KigZlDmzsUJWOmgH8
+99kzv0/6PPD9b39HgvSYABAwAkAtpIeLz3/mK1UMuBwfmsn6/B0BEKy3vfiV
+f/7mhUc+R+ImEMtuyYSB9c820n/207/75QBhBH1yZBRl4sF/MrPDOIhBYvSv
+L134PBEVHJ9be+ZPH/7SH3+dP2EcHnFkKFUa4T/9zS/+XZqgDB7//Kf+igzO
+qeKhML5/euShz9763a//iw6apnUD0hFZa65TZaXmN2j4vhvdf95/7g/ok/G8
+J/UnsiQW6qOqJP6Iz83QyLGaYe92fRMNMofeeKs0WKBJYpEAfzHxUEP+tRno
+1J+eo0/PffK3vvThz37iL3q7XDxkwRx8hQZpiDSFaQyywEdCZ8EyNYIpw6oh
+8qdOw/bGMcOsrxM0MhwXjvBI+IkP/jST2ogYEe06uKqnD6xuCYhmNrWRk5Oz
+dyVDLkOu0wdGsQScdItkCCYZHyKzPbVRkKYhmZu5rZEhqPR8H7jvdhAn5sUm
+NUkZmbdU7WkETERG1NjRfURcXoSxFwEHC1sfW001Hzv3Oh2bkhVny02MHZS0
+DShT2jQHvdSxg3ehsVOpMSC/N/6Y3mIrPcJLSTsfO8hE2tSec3okzxg+cnpM
+bgw0OA80LRrSbMSfbnT7pfYUS6htezNXBXrq+I30UrkypLhF7WRBJOWOJIPQ
+5oHQEMlUFYxICWSspFA3gIyuPFzZ6UoQ8vmCfbb6BRWLY2BCc25CmrfV3b1o
+dMR5G0SMlsSHRh1OTlA1VYAa8i6CmuqkcczP6+vKYme0pdoYog2pdg5YH0K7
+1/3RChelUYt/29phlyYWPFPKpgxmj3PAbgWslSkZ2HoJ+gqAxTIOsGeB8XIu
+5xolkyzZETvpEIA9ldpoVLO1r70S2FF9QZ+pHWHn30bAE06mNp1Ec7X6t6+E
+RQdLnQVtS8Agdjs6y4yNXPQ5kQyYBSX+1cSK4NbgN+VmhAKJTxk3yUgAI4yE
+em03cGHEyIkkZU3XxAv9VDSSb9ONVC+dg3ZwQ6m0Q82wAzCwC2hCxgu13PEE
+SjMg9TONCheV1M6mOQtI7gBmvQvIEbnzXembPCtSi46fI0FCyjEFfe9wB7ey
+ZScQzaQZUxhvE5gq85kZYD0FdEFiCN2x1BZKKjTz+ForzNB9AuxrJ4Ap0El4
+FId4/ikshpr7qPczxQ4A9K3BDG07m10jBKkZYCcCU9epxG/rbLfDDN0ngBSC
+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\
+\>"]]
+}, Open  ]]
+},
+WindowSize->{1664, 915},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Classroom.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 346, 7, 48, "Input"],
+Cell[928, 31, 3273, 102, 1490, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4238, 138, 163, 5, 48, "Input"],
+Cell[4404, 145, 1388, 21, 67, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5829, 171, 391, 11, 48, "Input"],
+Cell[6223, 184, 25186, 537, 981, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31446, 726, 105, 2, 48, "Input"],
+Cell[31554, 730, 1063, 22, 260, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32654, 757, 122, 3, 48, "Input"],
+Cell[32779, 762, 8975, 153, 260, 992, 21, "CachedBoxData", "BoxData", "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
