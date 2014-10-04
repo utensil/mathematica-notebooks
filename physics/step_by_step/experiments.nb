@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22532,        757]
-NotebookOptionsPosition[     20214,        670]
-NotebookOutlinePosition[     20585,        686]
-CellTagsIndexPosition[     20542,        683]
+NotebookDataLength[     32540,       1026]
+NotebookOptionsPosition[     26035,        849]
+NotebookOutlinePosition[     29977,        935]
+CellTagsIndexPosition[     29934,        932]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -665,11 +665,260 @@ Cell[BoxData[
   TraditionalForm]], "Output",
  CellChangeTimes->{{3.6213932105155997`*^9, 3.62139322327933*^9}, 
    3.62139326681782*^9, {3.62139335073262*^9, 3.6213933592471066`*^9}, 
-   3.621394809632064*^9, 3.6213949588886013`*^9, 3.621395034446923*^9}]
+   3.621394809632064*^9, 3.6213949588886013`*^9, {3.621395034446923*^9, 
+   3.6213950592193394`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Xi]", "[", "x_", "]"}], ":=", 
+  RowBox[{"x", "-", "a"}]}]], "Input",
+ CellChangeTimes->{{3.6214006540863476`*^9, 3.621400662255815*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Function", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"x", "-", "a"}]}], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"x", "\[Function]", 
+   RowBox[{"x", "-", "a"}]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6214007558441677`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"t", " ", "=", " ", 
+  RowBox[{"SubstituteVariable", "[", 
+   RowBox[{
+    RowBox[{"Inactive", "[", 
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", 
+       RowBox[{"-", "\[Infinity]"}], 
+       RowBox[{"+", "\[Infinity]"}]], 
+      RowBox[{"A", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "\[Lambda]"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"x", " ", "-", " ", "a"}], ")"}], "2"]}]], 
+       RowBox[{"\[DifferentialD]", "x"}]}]}], "]"}], ",", " ", "\[Xi]", ",", 
+    " ", "x", ",", " ", "\[Xi]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.621400705256274*^9, 3.6214007145208044`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Inactive", "[", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     RowBox[{"-", "\[Infinity]"}], 
+     RowBox[{"+", "\[Infinity]"}]], 
+    RowBox[{
+     RowBox[{"A", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[Lambda]"}], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"a", "+", "\[Xi]"}], ")"}], "-", "a"}], ")"}], "2"]}]]}], 
+     RowBox[{"\[DifferentialD]", 
+      RowBox[{"(", 
+       RowBox[{"a", "+", "\[Xi]"}], ")"}]}]}]}], "]"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{3.6214007162299023`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "Notation`"}]], "Input"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   StyleBox[
+    RowBox[{"Notation", "::", "difform"}], "MessageName"], 
+   RowBox[{
+   ":", " "}], "\<\"The defined current default input format \
+\[NoBreak]\\!\\(TraditionalForm\\`StandardForm\\)\[NoBreak] differs from the \
+current default output format \
+\[NoBreak]\\!\\(TraditionalForm\\`TraditionalForm\\)\[NoBreak]. The \
+WorkingForm option will default to the current default output format, but the \
+Notations, Symbolizations, and InfixNotations may behave differently than \
+expected. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:Notation/ref/Notation\\\", ButtonNote -> \
+\\\"Notation`Notation::difform\\\"]\\)\"\>"}], TraditionalForm]], "Message", \
+"MSG",
+ CellChangeTimes->{3.6214010599435616`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Notation", "[", 
+  RowBox[{
+   TemplateBox[{RowBox[{"expr_", 
+       TooltipBox[
+        RowBox[{
+          StyleBox[
+           OverscriptBox[
+            StyleBox["\[LeftTeeArrow]", "StandFormChar"], 
+            RowBox[{"fromvar_", " ", "->", "tovar_", " "}]], "StandFormChar"],
+           "func_"}], "StandardForm"]}]},
+    "NotationTemplateTag"], " ", "\[DoubleLongLeftRightArrow]", " ", 
+   TemplateBox[{RowBox[{"SubstituteVariable", "[", 
+       RowBox[{
+        "expr_", ",", " ", "func_", ",", " ", "fromvar_", ",", " ", 
+         "tovar_"}], "]"}]},
+    "NotationTemplateTag"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6214010801647177`*^9, 3.621401164577546*^9}, {
+   3.621401199944569*^9, 3.621401233249474*^9}, {3.6214012902317333`*^9, 
+   3.621401376470666*^9}, 3.6214033785761795`*^9}],
+
+Cell[BoxData[
+ RowBox[{"AddInputAlias", "[", 
+  RowBox[{"\"\<subvar\>\"", "\[Rule]", 
+   TemplateBox[{RowBox[{"\[Placeholder]", 
+       TooltipBox[
+        RowBox[{
+          StyleBox[
+           OverscriptBox[
+            StyleBox["\[LeftTeeArrow]", "StandFormChar"], 
+            
+            RowBox[{"\[Placeholder]", " ", "\[Rule]", "\[Placeholder]", 
+              " "}]], "StandFormChar"], "\[Placeholder]"}], "StandardForm"]}]},
+    "NotationTemplateTag"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.621402488483269*^9, 3.6214025181429653`*^9}, {
+  3.621403390904885*^9, 3.6214034405357237`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.621400625031686*^9, 3.621400627413822*^9}, {
+  3.621400773046152*^9, 3.621400934614393*^9}, {3.6214010102057166`*^9, 
+  3.621401046013765*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["x", "2"], 
+  TooltipBox[
+   StyleBox[
+    RowBox[{
+     OverscriptBox[
+      StyleBox["\[LeftTeeArrow]", "StandFormChar"], 
+      RowBox[{"x", " ", "\[Rule]", "y", " "}]], 
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}]}], "StandFormChar"],
+   "StandardForm"]}]], "Input",
+ CellChangeTimes->{{3.6214033990773525`*^9, 3.6214035091116457`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SuperscriptBox["x", "2"], " ", 
+   TagBox[
+    TooltipBox[
+     RowBox[{"RowBox", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"OverscriptBox", "[", 
+         RowBox[{
+          RowBox[{"ErrorBox", "[", "\<\"\[LeftTeeArrow]\"\>", "]"}], ",", 
+          RowBox[{"RowBox", "[", 
+           RowBox[{"{", 
+            RowBox[{"\<\"x\"\>", ",", "\<\"\[Rule]\"\>", ",", "\<\"y\"\>"}], 
+            "}"}], "]"}]}], "]"}], ",", 
+        RowBox[{"RowBox", "[", 
+         RowBox[{"{", 
+          RowBox[{"\<\"(\"\>", ",", 
+           RowBox[{"RowBox", "[", 
+            RowBox[{"{", 
+             RowBox[{"\<\"x\"\>", ",", "\<\"-\"\>", ",", "\<\"1\"\>"}], "}"}],
+             "]"}], ",", "\<\")\"\>"}], "}"}], "]"}]}], "}"}], "]"}],
+     "StandardForm"],
+    Annotation[#, StandardForm, "Tooltip"]& ]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6214035097596827`*^9}]
 }, Open  ]]
 },
-WindowSize->{1664, 968},
+WindowSize->{1680, 968},
 WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+InputAliases->{"intt" -> RowBox[{"\[Integral]", 
+     RowBox[{"\[SelectionPlaceholder]", 
+       RowBox[{"\[DifferentialD]", "\[Placeholder]"}]}]}], "dintt" -> RowBox[{
+     SubsuperscriptBox[
+     "\[Integral]", "\[SelectionPlaceholder]", "\[Placeholder]"], 
+     RowBox[{"\[Placeholder]", 
+       RowBox[{"\[DifferentialD]", "\[Placeholder]"}]}]}], "sumt" -> RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"\[SelectionPlaceholder]", "=", "\[Placeholder]"}], 
+      "\[Placeholder]"], "\[Placeholder]"}], "prodt" -> RowBox[{
+     UnderoverscriptBox["\[Product]", 
+      RowBox[{"\[SelectionPlaceholder]", "=", "\[Placeholder]"}], 
+      "\[Placeholder]"], "\[Placeholder]"}], "dt" -> RowBox[{
+     SubscriptBox["\[PartialD]", "\[Placeholder]"], " ", 
+     "\[SelectionPlaceholder]"}], "ia" -> 
+  TemplateBox[{"\[SelectionPlaceholder]"}, "Inactive"], "cbrt" -> 
+  RadicalBox[
+   "\[SelectionPlaceholder]", "3", SurdForm -> True, MultilineFunction -> 
+    None], "surd" -> 
+  RadicalBox[
+   "\[SelectionPlaceholder]", "\[Placeholder]", SurdForm -> True, 
+    MultilineFunction -> None], "ket" -> 
+  TemplateBox[{"\[SelectionPlaceholder]"}, "Ket"], "bra" -> 
+  TemplateBox[{"\[SelectionPlaceholder]"}, "Bra"], "braket" -> 
+  TemplateBox[{"\[SelectionPlaceholder]", "\[Placeholder]"}, "BraKet"], 
+  "delay" -> TemplateBox[{"\[SelectionPlaceholder]"}, "SystemsModelDelay"], 
+  "grad" -> RowBox[{
+     SubscriptBox["\[Del]", "\[SelectionPlaceholder]"], "\[Placeholder]"}], 
+  "del." -> RowBox[{
+     SubscriptBox["\[Del]", "\[SelectionPlaceholder]"], ".", 
+     "\[Placeholder]"}], "delx" -> RowBox[{
+     SubscriptBox["\[Del]", "\[SelectionPlaceholder]"], "\[Cross]", 
+     "\[Placeholder]"}], "del2" -> RowBox[{
+     SubsuperscriptBox["\[Del]", "\[SelectionPlaceholder]", 2], 
+     "\[Placeholder]"}], "notation" -> RowBox[{"Notation", "[", 
+     RowBox[{
+       TemplateBox[{"\[SelectionPlaceholder]"}, "NotationTemplateTag"], " ", 
+       "\[DoubleLongLeftRightArrow]", " ", 
+       TemplateBox[{"\[Placeholder]"}, "NotationTemplateTag"]}], "]"}], 
+  "notation>" -> RowBox[{"Notation", "[", 
+     RowBox[{
+       TemplateBox[{"\[SelectionPlaceholder]"}, "NotationTemplateTag"], " ", 
+       "\[DoubleLongRightArrow]", " ", 
+       TemplateBox[{"\[Placeholder]"}, "NotationTemplateTag"]}], "]"}], 
+  "notation<" -> RowBox[{"Notation", "[", 
+     RowBox[{
+       TemplateBox[{"\[SelectionPlaceholder]"}, "NotationTemplateTag"], " ", 
+       "\[DoubleLongLeftArrow]", " ", 
+       TemplateBox[{"\[Placeholder]"}, "NotationTemplateTag"]}], "]"}], 
+  "symb" -> RowBox[{"Symbolize", "[", 
+     TemplateBox[{"\[SelectionPlaceholder]"}, "NotationTemplateTag"], "]"}], 
+  "infixnotation" -> RowBox[{"InfixNotation", "[", 
+     RowBox[{
+       TemplateBox[{"\[SelectionPlaceholder]"}, "NotationTemplateTag"], ",", 
+       "\[Placeholder]"}], "]"}], "addia" -> RowBox[{"AddInputAlias", "[", 
+     RowBox[{"\"\[SelectionPlaceholder]\"", "\[Rule]", 
+       TemplateBox[{"\[Placeholder]"}, "NotationTemplateTag"]}], "]"}], 
+  "pattwraper" -> 
+  TemplateBox[{"\[SelectionPlaceholder]"}, "NotationPatternTag"], 
+  "madeboxeswraper" -> 
+  TemplateBox[{"\[SelectionPlaceholder]"}, "NotationMadeBoxesTag"], 
+  "inactive" -> SubscriptBox["\[Placeholder]", "~"], "subvar" -> 
+  RowBox[{"\[Placeholder]", 
+     TooltipBox[
+      RowBox[{
+        StyleBox[
+         OverscriptBox[
+          StyleBox["\[LeftTeeArrow]", "StandFormChar"], 
+          RowBox[{"\[Placeholder]", " ", "\[Rule]", "\[Placeholder]", " "}]], 
+         "StandFormChar"], "\[Placeholder]"}], "StandardForm"]}]},
 Magnification:>2.3 Inherited,
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
 StyleDefinitions->"Default.nb"
@@ -710,54 +959,74 @@ Cell[2061, 88, 242, 6, 68, "Input"],
 Cell[2306, 96, 283, 9, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2626, 110, 297, 8, 97, "Input"],
-Cell[2926, 120, 289, 8, 130, "Output"]
+Cell[2626, 110, 297, 8, 68, "Input"],
+Cell[2926, 120, 289, 8, 101, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3252, 133, 149, 3, 97, "Input"],
-Cell[3404, 138, 928, 31, 154, "Output"]
+Cell[3252, 133, 149, 3, 68, "Input"],
+Cell[3404, 138, 928, 31, 125, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4369, 174, 302, 8, 97, "Input"],
-Cell[4674, 184, 518, 13, 134, "Output"]
+Cell[4369, 174, 302, 8, 68, "Input"],
+Cell[4674, 184, 518, 13, 105, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5229, 202, 82, 2, 97, "Input"],
-Cell[5314, 206, 143, 4, 130, "Output"]
+Cell[5229, 202, 82, 2, 68, "Input"],
+Cell[5314, 206, 143, 4, 101, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5494, 215, 570, 16, 141, "Input"],
-Cell[6067, 233, 4075, 139, 209, "Output"]
+Cell[5494, 215, 570, 16, 112, "Input"],
+Cell[6067, 233, 4075, 139, 180, "Output"]
 }, Open  ]],
 Cell[10157, 375, 113, 1, 112, "Input"],
 Cell[CellGroupData[{
-Cell[10295, 380, 350, 9, 134, "Input"],
-Cell[10648, 391, 610, 18, 97, "Output"]
+Cell[10295, 380, 350, 9, 105, "Input"],
+Cell[10648, 391, 610, 18, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11295, 414, 438, 9, 137, "Input"],
-Cell[11736, 425, 435, 13, 97, "Output"]
+Cell[11295, 414, 438, 9, 108, "Input"],
+Cell[11736, 425, 435, 13, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12208, 443, 334, 7, 97, "Input"],
-Cell[12545, 452, 312, 6, 97, "Output"]
+Cell[12208, 443, 334, 7, 68, "Input"],
+Cell[12545, 452, 312, 6, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12894, 463, 469, 10, 97, "Input"],
-Cell[13366, 475, 396, 9, 97, "Output"]
+Cell[12894, 463, 469, 10, 68, "Input"],
+Cell[13366, 475, 396, 9, 68, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13799, 489, 1292, 33, 158, "Input"],
-Cell[15094, 524, 1326, 35, 155, "Output"]
+Cell[13799, 489, 1292, 33, 129, "Input"],
+Cell[15094, 524, 1326, 35, 126, "Output"]
 }, Open  ]],
-Cell[16435, 562, 950, 22, 184, "Input"],
+Cell[16435, 562, 950, 22, 155, "Input"],
 Cell[CellGroupData[{
-Cell[17410, 588, 583, 15, 118, "Input"],
-Cell[17996, 605, 485, 10, 106, "Output"]
+Cell[17410, 588, 583, 15, 89, "Input"],
+Cell[17996, 605, 485, 10, 77, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[18518, 620, 844, 22, 105, "Input"],
-Cell[19365, 644, 833, 23, 134, "Output"]
+Cell[19365, 644, 863, 24, 105, "Output"]
+}, Open  ]],
+Cell[20243, 671, 174, 4, 97, "Input"],
+Cell[CellGroupData[{
+Cell[20442, 679, 129, 4, 97, "Input"],
+Cell[20574, 685, 157, 4, 97, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20768, 694, 693, 18, 134, "Input"],
+Cell[21464, 714, 666, 21, 134, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22167, 740, 53, 1, 97, "Input"],
+Cell[22223, 743, 820, 17, 140, "Message"]
+}, Open  ]],
+Cell[23058, 763, 824, 19, 218, "Input"],
+Cell[23885, 784, 601, 14, 134, "Input"],
+Cell[24489, 800, 192, 3, 68, "Input"],
+Cell[CellGroupData[{
+Cell[24706, 807, 393, 12, 106, "Input"],
+Cell[25102, 821, 917, 25, 129, "Output"]
 }, Open  ]]
 }
 ]
